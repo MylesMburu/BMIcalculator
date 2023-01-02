@@ -1,17 +1,40 @@
-
+header{
+  text-align: center;
+  color: black;
+}
 body{
-  background-color: mediumslateblue;
-  
+  background-color: rgb(111, 111, 111);
+  color: white;
+}
+input{
+  width: 200px;
+  border-radius: 20px;
 }
 button{
   margin-top: 1rem;
   width: 100px;
   border-radius: 10px;
-  background-color: green;
+  background-color: darkslategray;
   color: white;
+}
+.action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 form{
   font-size: large;
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+.result{
+  text-align: center;
+}
+

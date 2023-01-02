@@ -8,21 +8,26 @@
     <script src="index.js"></script>
     <title>Document</title>
   </head>
+  <header><h1>BMI CALCULATOR</h1></header>
   <body>
-    <h1>BMI CALCULATOR</h1>
-    <form action="">
-      Enter a weight in kgs
+    <div id="form">
+      <form action="">
+        Enter a weight in kgs
+        <br />
+        <input type="number" name="weight" id="weight" /><br />
+        Enter a height in metres
+        <br />
+        <input type="number" name="height" id="height" /><br />
+      </form>
+    </div>
+    <div class="action">
+      <button onclick="calculate()">CALCULATE</button>
+      <button onclick="reset()">RESET</button>
+    </div>
+    <div class="result">
+      <h3>The BMI result is:</h3>
+      <div id="output"></div>
       <br />
-      <input type="number" name="weight" id="weight" /><br />
-      Enter a height in metres
-      <br />
-      <input type="number" name="height" id="height" /><br />
-    </form>
-
-    <button onclick="calculate()">CALCULATE</button>
-    <button onclick="reset()">RESET</button>
-    <h3>The BMI result is:</h3>
-    <div id="output"></div>
-    <br />
+    </div>
   </body>
 </html>
